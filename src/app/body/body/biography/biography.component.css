@@ -1,0 +1,55 @@
+#container-father {
+    background-color: rgb(162, 200, 234);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#title{
+    width: 100%;
+}
+h1{
+    text-align: center;
+}
+
+#container-body {
+    width: 80%;
+    display: flex;
+}
+
+#container-bio {
+    width: 60%;
+    display: flex;
+}
+
+#container-bio > div {
+    margin: 0% 3% 0% 0%;
+}
+
+#container-bio > div > p {
+    text-align: justify;
+    word-spacing: 5.5px;
+}
+
+#container-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 40%;
+}
+
+#container-info img {
+    width: 100px;
+}
+
+.container-img {
+    margin: 3% 0;
+}
+#first-image {
+width: 250px;
+}
+
+.text-title {
+    font-size: 20px;
+}

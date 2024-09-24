@@ -1,18 +1,27 @@
-<div>
-    <h1>{{title}}</h1>
-    <div>
-        <img src="{{image}}" alt="">
-        <div *ngFor="let stat of stats_list">
-            <p>{{stat.text}}</p>
+<div id="container">
+  <div>
+    <h1>{{ title }}</h1>
+  </div>
+  <div id="container-body">
+    <div id="container-stats">
+        <div>
+            <img src="{{ image }}" alt="" width="350px" height="300px"/>
+        </div>
+
+        <div id="container-text">
+            <div *ngFor="let stat of stats_list">
+                <p>{{ stat.text }}</p>
+            </div>
         </div>
     </div>
 
-    <div>
-        <div *ngFor="let stat of stats_info">
-            <h3>{{stat.team}}</h3>
-            <img src="{{stat.img}}" alt="">
-            <p>{{stat.goals}}</p>
-            <p>{{stat.assists}}</p>
+    <div id="container-team">
+        <div *ngFor="let stat of stats_info" id="container-team-section">
+            <h3>{{ stat.team }}</h3>
+            <img src="{{ stat.img }}" alt=""/>
+            <p>{{ stat.goals }}</p>
+            <p>{{ stat.assists }}</p>
         </div>
     </div>
+  </div>
 </div>

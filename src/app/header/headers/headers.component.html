@@ -1,9 +1,8 @@
-<div>
-    <div>
-        <h1>{{title}}</h1>
-
-        <div *ngFor="let tx of menu_list">
-            <p>{{tx.text}}</p>
+<div id="father">
+    <h1>{{ title }}</h1>
+        <div id="container">
+            <div *ngFor="let tx of menu_list" id="container-bar">
+                <p>{{ tx.text }}</p>
+            </div>
         </div>
-    </div>
 </div>
