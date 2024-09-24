@@ -1,1 +1,12 @@
-<p>footer works!</p>
+<div>
+    <div>
+        <div *ngFor="let fot of socialMedia">
+            <img src="{{fot.img}}" alt="">
+            <p>{{fot.text}}</p>
+        </div>
+    </div>
+
+    <div>
+        <p>{{autor}}</p>
+    </div>
+</div>

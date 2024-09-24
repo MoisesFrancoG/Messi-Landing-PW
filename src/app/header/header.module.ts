@@ -10,6 +10,9 @@ import { HeadersComponent } from './headers/headers.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    HeadersComponent
   ]
 })
 export class HeaderModule { }

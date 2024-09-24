@@ -1,1 +1,11 @@
-<p>trophies works!</p>
+<div>
+    <h1>{{title}}</h1>
+
+    <div *ngFor="let trophie of trophies_list">
+        <div>
+            <img src="{{trophie.image}}" alt="">
+            <p>{{trophie.name}}</p>
+            <p>{{trophie.number}}</p>
+        </div>
+    </div>
+</div>
