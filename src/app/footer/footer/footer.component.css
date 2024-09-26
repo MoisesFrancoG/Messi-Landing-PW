@@ -1,0 +1,28 @@
+#container {
+    width: 100%;
+    height: 120px;
+    background-color: rgb(164, 158, 158);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container-social {
+    width: 48%;
+}
+
+#container-autor {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#c-social {
+    display: flex;
+    align-items: center;
+}
+
+#c-social p {
+    margin-left: 1%;
+}

@@ -1,0 +1,8 @@
+<div id="father">
+    <h1>{{ title }}</h1>
+        <div id="container">
+            <div *ngFor="let tx of menu_list" id="container-bar">
+                <div (click)="scrollTo(tx.id)" id="container-option">{{ tx.text }}</div>
+            </div>
+        </div>
+</div>

@@ -1,0 +1,43 @@
+#container {
+    background-color: rgb(225, 142, 142);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 200;
+  }
+  #container-body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .trophie {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 8);
+    margin: 10px 0;
+    text-align: center;
+    transition: 0.4s;
+  }
+
+  .trophie:hover {
+    transform: scale(1.2);
+    color: whitesmoke;
+  }
+
+  .trophie:hover .trophie-number {
+    transform: scale(1.5);
+  }
+  
