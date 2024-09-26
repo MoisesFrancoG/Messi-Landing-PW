@@ -8,16 +8,16 @@ export class InformationService {
 
   getInfoHeaders() {
     return [
-      { text: 'Biografia' },
-      { text: 'Estadisticas' },
-      { text: 'Palmares' },
+      { text: 'Biografia',id: "section1" },
+      { text: 'Estadisticas',id: "section2" },
+      { text: 'Palmares',id: "section3" },
     ];
   }
 
   getInfoBody() {
     return {
       title: 'Lionel Andres Messi Cuccittini',
-      text: 'Lionel Andrés Messi Cuccittini(Rosario, 24 de junio de 1987), conocido como Leo Messi, es un futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.Considerado con frecuencia el mejor jugador del mundo y uno de los mejores de todos los tiempos,​ es el único en la historia que ha ganado, entre otras distinciones, ocho veces el Balón de Oro, ocho premios de la FIFA al mejor jugador del mundo, seis Botas de Oro y dos Balones de Oro de la Copa Mundial de Fútbol.',
+      text: 'Lionel Andrés Messi Cuccittini(Rosario, 24 de junio de 1987), conocido como Leo Messi, es un futbolista argentino que juega como delantero o centrocampista. Desde 2023, integra el plantel del Inter Miami de la MLS canadoestadounidense. Es también internacional con la selección de Argentina, de la que es capitán.Considerado con frecuencia el mejor jugador del mundo y uno de los mejores de todos los tiempos,es el único en la historia que ha ganado, entre otras distinciones, ocho veces el Balón de Oro, ocho premios de la FIFA al mejor jugador del mundo, seis Botas de Oro y dos Balones de Oro de la Copa Mundial de Fútbol.',
       image: 'images/lionel.jpg',
     };
   }

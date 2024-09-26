@@ -16,4 +16,12 @@ export class HeadersComponent implements OnInit {
   ngOnInit(): void {
     this.menu_list = this.InfoService.getInfoHeaders();
   }
+
+  scrollTo(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+  
 }

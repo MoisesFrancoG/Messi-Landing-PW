@@ -2,7 +2,7 @@
     <h1>{{ title }}</h1>
         <div id="container">
             <div *ngFor="let tx of menu_list" id="container-bar">
-                <p>{{ tx.text }}</p>
+                <div (click)="scrollTo(tx.id)" id="container-option">{{ tx.text }}</div>
             </div>
         </div>
 </div>

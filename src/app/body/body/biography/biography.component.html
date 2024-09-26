@@ -1,25 +1,28 @@
-<div id="container-father">
-  <div id="title">
-    <h1>{{ title }}</h1>
+<div id="section1">
+
+  <div id="container-father">
+    <div id="title">
+      <h1>{{ title }}</h1>
+    </div>
+  
+        <div id="container-body">
+              <div id="container-bio">
+                <div>
+                  <img src="{{ image }}" alt="" id="first-image"/>
+                </div>
+                <div>
+                  <p>{{ text }}</p>
+                </div>
+              </div>
+  
+  
+            <div id="container-info">
+              <div *ngFor="let team of list_titles" class="container-img">
+                <p class="text-title">{{ team.title }}</p>
+                <img src="{{ team.img }}" alt="" />
+              </div>
+            </div>
+        </div>
+  
   </div>
-
-      <div id="container-body">
-            <div id="container-bio">
-              <div>
-                <img src="{{ image }}" alt="" id="first-image"/>
-              </div>
-              <div>
-                <p>{{ text }}</p>
-              </div>
-            </div>
-
-
-          <div id="container-info">
-            <div *ngFor="let team of list_titles" class="container-img">
-              <p class="text-title">{{ team.title }}</p>
-              <img src="{{ team.img }}" alt="" />
-            </div>
-          </div>
-      </div>
-
 </div>
